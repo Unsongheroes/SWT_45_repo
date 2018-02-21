@@ -2,7 +2,8 @@
 {
     public class FakeRoulette : IRoulette
     {
-        public Field _result
+        private Field _result;
+        public Field Result
         {
             set => _result = value;
             get => GetResult();
@@ -19,7 +20,7 @@
 
         public void Spin()
         {
-            _result = new Field(1, Field.Red);
+            Result = new Field(1, Field.Red);
             SpinFuntionWasCalled = true;
         }
 
