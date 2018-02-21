@@ -1,6 +1,6 @@
 ﻿namespace RouletteGame.Legacy
 {
-    public abstract class Bet
+    public abstract class Bet : IBet
     {
         protected Bet(string name, uint amount)
         {

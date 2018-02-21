@@ -2,7 +2,7 @@
 
 namespace RouletteGame.Legacy
 {
-    public class Field
+    public class Field : IField
     {
         public const uint Red = 0;
         public const uint Black = 1;
