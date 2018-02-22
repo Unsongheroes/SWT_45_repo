@@ -60,7 +60,7 @@ namespace RouletteGameTestSuite
         [Test]
         public void RoulettePayUp_TestBetWonAmount()
         {
-            var roulette = new Roulette();
+            var roulette = new Roulette(new Randomizer());
             var uut = new RouletteGame.Legacy.RouletteGame(roulette);
             var fakeBet = new FakeBet("FakeBet", 100);
 
@@ -74,7 +74,7 @@ namespace RouletteGameTestSuite
         [Test]
         public void RouletteFakeBetPlayerName()
         {
-            var roulette = new Roulette();
+            var roulette = new Roulette(new Randomizer());
             var uut = new RouletteGame.Legacy.RouletteGame(roulette);
             var fakeBet = new FakeBet("FakeBet", 100);
 
@@ -84,7 +84,7 @@ namespace RouletteGameTestSuite
         [Test]
         public void RouletteFakeBetAmount()
         {
-            var roulette = new Roulette();
+            var roulette = new Roulette(new Randomizer());
             var uut = new RouletteGame.Legacy.RouletteGame(roulette);
             var fakeBet = new FakeBet("FakeBet", 100);
 

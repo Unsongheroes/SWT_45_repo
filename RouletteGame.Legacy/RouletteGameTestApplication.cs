@@ -4,7 +4,8 @@
     {
         private static void Main()
         {
-            var game = new RouletteGame(new Roulette());
+            var random = new Randomizer();
+            var game = new RouletteGame(new Roulette(random));
             game.OpenBets();
             game.PlaceBet(new ColorBet("Player 1", 100, Field.Black));
             game.PlaceBet(new ColorBet("Player 1", 100, Field.Red));
